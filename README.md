@@ -11,7 +11,7 @@ The to-do app is based on https://github.com/kabirbaidhya/react-todo-app.
 
 First clone this repository.
 ```bash
-$ git clone https://github.com/kabirbaidhya/react-todo-app.git
+$ git clone https://github.com/asigrist/todoapp.git
 ```
 
 Install dependencies. Make sure you already have [`nodejs`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
