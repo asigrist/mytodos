@@ -10,7 +10,8 @@ export default function Footer(props) {
                 <strong>
                     <span className="count-todos">{count}</span>
                 </strong>
-                {' items left'}
+                {(count === 1) ? ' item ' : ' items '}
+                left to do
             </div>
             <div className="pull-right">
                 <Filter filter={filter} change={changeFilter}/>
