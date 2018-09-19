@@ -5,11 +5,10 @@ import InputBox from './InputBox';
 import Footer from './Footer';
 
 function TodoList(props) {
-    const {title, items, addNew, filter, changeFilter, changeStatus, updateStatus} = props;
+    const {title, items, addNew, filter, changeFilter, changeStatus} = props;
     const count = countActive(items).length;
 
     const filteredList = applyFilter(items, filter);
-    const activeItemCount = countActive(items);
     return (
       <div>
         <Header title={title} />
@@ -40,5 +39,5 @@ function TodoList(props) {
   function countActive(list) {
     return list.filter(item => item.completed !== true);
   }
-  
+
 export default TodoList;
